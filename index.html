@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Циклы, массивы</title>
+</head>
+<body>
+    <script>
+        // Мне очень, очень непросто далось это решение, на него ушло много часов, так как соображаю я медленно
+        // Я сделала 2 цикла с меткой на внешнем, и это работало, но когда поняла, что можно сократить до одного, не удержалась
+        // Я продолжу думать и искать другие варианты, а также решения задач с пробелами и методом repeat после выполнения следующей домашки
+
+        var treeHeight = +prompt('Насколько высокая елочка Вам нужна? Введите число от 2 до 10', 2);
+        
+        if (treeHeight >= 2 && treeHeight <= 10) {
+            
+            var star = '*';
+            var tree = '';
+
+            for (var i = 1; i <= treeHeight; i++) {
+                tree = tree + star +'\n';
+                star = star + '*';     
+            }
+
+            alert(tree);
+
+        } else {
+            alert('Недопустимое значение');
+        }
+
+        // Здесь самый первый вариант решения, который я нашла до того как узнала на следующем занятии, что задачу следует решить двумя циклами
+
+        // var treeHeight = +prompt('Насколько высокая елочка Вам нужна? Введите число от 2 до 10', 2);
+        // var christmasTree = [];
+        // var star = '*\n';
+
+        // if (treeHeight >= 2 && treeHeight <= 10) {
+            
+        //     for (let i = 0; i < treeHeight; i++) {
+                                
+        //         christmasTree[i] = star;
+        //         star = '*' + star;
+        //     }
+
+        //     alert(christmasTree.join(""));
+
+        // } else {
+        //     alert('Недопустимое значение');
+        // }
+
+    </script>
+</body>
+</html>
